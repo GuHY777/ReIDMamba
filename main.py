@@ -57,7 +57,7 @@ if __name__ == '__main__':
     parser.add_argument('--rerank_lambda', type=float, default=0.3, help='lambda for re-ranking (default: 0.3)')
     
     # model
-    parser.add_argument('--model', type=str, default='ReIDMambaR', help='model name (default: BoT)')
+    parser.add_argument('--model', type=str, default='ReIDMamba', help='model name (default: BoT)')
     parser.add_argument('--model_path', type=str, default='', help='path to pre-trained model (default: None)') #keep_rates(float)=[0.75,0.75,0.75]|keep_list(str)=[6,12,18]|            |keep_rates(int)=[2,2,2,2,2,2,2]|keep_list(str)=[3,6,9,12,15,18,21]|ordered(bool)=1|sample_wise(bool)=1
     parser.add_argument('--model_kwargs', type=str2dict, default='backbone_name(str)=mambar_small_patch16_224|drop_path_rate(float)=0.3|num_cls_tokens(int)=12|cls_reduce(int)=4|use_cid(bool)=1|stride_size(int)=16|num_branches(int)=3|token_fusion_type(str)=max', help='kwargs for model ("cls_bias(bool)=1|cls_weight(float)=1.0|tst_list(int)=[1,2,3,4]")')
     parser.add_argument('--ema', type=str2dict, default='ema_model(bool)=0|ema_decay(float)=0.9992', help='ema for model (default: ema_model(bool)=1|ema_decay(float)=0.9999)')

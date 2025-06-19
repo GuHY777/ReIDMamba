@@ -96,7 +96,7 @@ def get_oth_pos(num_patches, cls_pos):
 
 
 @MODEL_REGISTRY.register()
-class ReIDMambaR(nn.Module):
+class ReIDMamba(nn.Module):
     def __init__(self, backbone_name='mambar_base_patch16_224', num_classes=751, img_size=224, patch_size=16, stride_size=16,
                  in_chans=3, drop_path_rate=0.1, num_cls_tokens=8, cls_reduce=4, num_branches=1, token_fusion_type='max',
                  use_cid=False, num_cids=0, sie_xishu =3.0,  *args, **kwargs):
