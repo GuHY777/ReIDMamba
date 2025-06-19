@@ -1,0 +1,147 @@
+gpus:
+- '0'
+exp: market1501_384
+seed: 777
+config: ''
+dataroot: /root/data/DataSets/PersonReID_DataSets
+dataset:
+- Market1501
+p_trn: 1.0
+split_mode_trn: by_person
+dataset_trn:
+- ''
+dataset_qry:
+- ''
+dataset_gal:
+- ''
+pixel_mean:
+- 0.485
+- 0.456
+- 0.406
+pixel_std:
+- 0.229
+- 0.224
+- 0.225
+img_size:
+- 384
+- 128
+num_workers: 10
+bs_trn:
+- 16
+- 4
+bs_tst:
+- 128
+sp_forever: true
+sp_seeds: false
+aa_tf:
+  do_aa: false
+  aa_prob: 0.1
+crop_tf:
+  do_crop: false
+  crop_size:
+  - 384
+  - 128
+  crop_scale:
+  - 0.08
+  - 1.0
+  crop_ratio:
+  - 0.75
+  - 1.33
+pad_tf:
+  do_pad: true
+  padding_size:
+  - 10
+  - 10
+  padding_mode: constant
+  padding_fill:
+  - 0.0
+  - 0.0
+  - 0.0
+flip_tf:
+  do_flip: true
+  flip_prob: 0.5
+rea_tf:
+  do_rea: true
+  rea_prob: 0.5
+  rea_value: random
+  rea_scale:
+  - 0.02
+  - 0.4
+  rea_ratio:
+  - 0.3
+  - 3.33
+eval_freq:
+- 20
+show_nums: 50
+dist_metric: cosine
+use_cython: true
+test_flip: true
+search_options:
+- 3
+- 2
+rerank: false
+rerank_k1: 20
+rerank_k2: 6
+rerank_lambda: 0.3
+model: ReIDMambaR
+model_path: ''
+model_kwargs:
+  backbone_name: mambar_small_patch16_224
+  drop_path_rate: 0.3
+  num_cls_tokens: 12
+  cls_reduce: 4
+  use_cid: true
+  stride_size: 12
+  num_branches: 3
+  token_fusion_type: max
+ema:
+  ema_model: false
+  ema_decay: 0.9992
+loss:
+- triplet_loss
+- cross_entropy_loss
+- ratr_intra_loss
+- ratr_inter_loss
+loss_weights:
+- 1.0
+- 1.0
+- 1.0
+- 1.0
+loss_nums:
+- 3
+- 3
+- 1
+- 1
+loss_kwargs:
+- margin: 1.2
+- label_smoothing: 0.1
+- N: 3
+  PK:
+  - 16
+  - 4
+  tau: 0.1
+- N: 3
+  PK:
+  - 16
+  - 4
+  tau: 0.1
+optim: sgd
+optim_kwargs:
+  lr: 0.008
+  weight_decay: 0.0
+  momentum: 0.9
+  nesterov: false
+lr_scheduler: LinearWarmupLrScheduler
+lr_scheduler_kwargs:
+  warmup_epochs: 4
+  warmup_iters: 1200
+  lr_multiplier: 0.01
+  lrs2: CosineAnnealingLR
+  lrs2_kwargs:
+    T_max: 155
+    eta_min: 8.0e-06
+epochs: 160
+freeze_bb: 0
+eval_bb: 0
+amp: true
+grad_clip: 10.0

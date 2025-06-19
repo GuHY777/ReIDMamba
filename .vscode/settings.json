@@ -1,0 +1,32 @@
+{
+    "workbench.editor.enablePreview": false,
+    "python.linting.pylintPath": "/data4/guhongyang/anaconda3/pkgs/pylint-2.4.2-py37_0/lib/python3.7/site-packages/pylint",
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "python.languageServer": "Pylance",
+    "editor.fontSize": 12
+,
+    "window.zoomLevel": 1,
+
+    "python.linting.flake8Enabled": false,
+    "python.formatting.provider": "none",
+    "python.linting.flake8Args": [
+        "--max--line-length=248"
+    ],
+
+    "editor.wordWrap": "off",
+    "python.analysis.completeFunctionParens": true,
+    
+    "workbench.colorCustomizations": {
+    "editor.wordHighlightBorder": "#00ff37",
+    "editor.selectionHighlightBorder": "#00ff37",
+    "editor.findMatchHighlightBorder": "#00ff37",
+    "editor.symbolHighlightBorder": "#00ff37"
+    },
+
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8",
+      },
+
+    "local-history.exclude": ["./history/**", "./vscode**", "**/__pycache__/**", "./runs/**"]
+}
