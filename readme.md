@@ -67,17 +67,6 @@ python main.py --gpus 0 --exp 'market1501_384' --dataset 'Market1501' --img_size
 ```
 
 
-## ReID performance
-
-We have reproduced the performance to verify the reproducibility. Since the code has been reorganized, the reproduced results may have a gap of about 0.5% with the numbers in the paper.
-  
-### Market-1501
-| Model         | Image Size| mAP/Rank-1 | Logs |
-| :------:      | :------: |:----------:|:------: |
-| ReIDMamba*   | 384x128 | 89.9/95.5  |[log.txt](https://github.com/GuHY777/ReIDMamba/blob/master/runs/market1501_384/0/log.txt)
-
-
-
 ## Citation
 
 If you find this code useful for your research, please cite our paper
