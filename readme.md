@@ -69,7 +69,7 @@ python main.py --gpus 0 --exp 'market1501_384' --dataset 'Market1501' --img_size
 
 ## ReID performance
 
-We have reproduced the performance to verify the reproducibility. The reproduced results may have a gap of about 0.5% with the numbers in the paper.
+We have reproduced the performance to verify the reproducibility. Since the code has been reorganized, the reproduced results may have a gap of about 0.5% with the numbers in the paper.
   
 ### Market-1501
 | Model         | Image Size| mAP/Rank-1 | Logs |
