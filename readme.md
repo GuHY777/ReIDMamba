@@ -1,3 +1,5 @@
+The *official* repository for [ReIDMamba: Learning Discriminative Features with Visual State Space Model for Person Re-Identification](wating)[Under review!].
+
 ![Python >=3.11.11](https://img.shields.io/badge/Python->=3.11.11-yellow.svg)
 ![PyTorch >=2.2.2](https://img.shields.io/badge/PyTorch->=2.2.2-blue.svg)
 
