@@ -2,7 +2,7 @@
 ![PyTorch >=2.2.2](https://img.shields.io/badge/PyTorch->=2.2.2-blue.svg)
 
 # ReIDMamba: Learning Discriminative Features with Visual State Space Model for Person Re-Identification [[pdf]](wating)
-The *official* repository for [ReIDMamba: Learning Discriminative Features with Visual State Space Model for Person Re-Identification](wating)[Under review!].
+The *official* repository for [ReIDMamba: Learning Discriminative Features with Visual State Space Model for Person Re-Identification](wating)[Accept to TMM!].
 
 ![](https://github.com/GuHY777/ReIDMamba/blob/master/figs/reidmamba.jpg)
 
@@ -74,3 +74,4 @@ If you find this code useful for your research, please cite our paper
 ```
 wating for ...
 ```
+
