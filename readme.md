@@ -72,6 +72,7 @@ python main.py --gpus 0 --exp 'market1501_384' --dataset 'Market1501' --img_size
 If you find this code useful for your research, please cite our paper
 
 ```
-wating for ...
+waiting for ...
 ```
+
 
