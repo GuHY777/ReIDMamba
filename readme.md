@@ -1,7 +1,7 @@
 ![Python >=3.11.11](https://img.shields.io/badge/Python->=3.11.11-yellow.svg)
 ![PyTorch >=2.2.2](https://img.shields.io/badge/PyTorch->=2.2.2-blue.svg)
 
-# ReIDMamba: Learning Discriminative Features with Visual State Space Model for Person Re-Identification [[pdf]](wating)
+# ReIDMamba: Learning Discriminative Features with Visual State Space Model for Person Re-Identification [[[pdf](https://arxiv.org/abs/2511.07948)]]
 The *official* repository for [ReIDMamba: Learning Discriminative Features with Visual State Space Model for Person Re-Identification](wating)[Accept to TMM!].
 
 ![](https://github.com/GuHY777/ReIDMamba/blob/master/figs/reidmamba.jpg)
@@ -72,7 +72,16 @@ python main.py --gpus 0 --exp 'market1501_384' --dataset 'Market1501' --img_size
 If you find this code useful for your research, please cite our paper
 
 ```
-waiting for ...
+@misc{gu2025reidmambalearningdiscriminativefeatures,
+      title={ReIDMamba: Learning Discriminative Features with Visual State Space Model for Person Re-Identification}, 
+      author={Hongyang Gu and Qisong Yang and Lei Pu and Siming Han and Yao Ding},
+      year={2025},
+      eprint={2511.07948},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2511.07948}, 
+}
 ```
+
 
 
